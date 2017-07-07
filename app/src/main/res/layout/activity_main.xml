@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.acadgild.siddharth.threadassignment161.MainActivity">
+
+
+    <EditText
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="18dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Data"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/adddata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/data"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/data"
+        android:text="Add data" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adddata"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:layout_marginTop="26dp"
+        android:text="Content in the file" />
+
+    <TextView
+        android:id="@+id/dataset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/data"
+        android:layout_below="@+id/content"
+        android:layout_marginStart="13dp"
+        android:textColor="#000"
+        android:layout_marginTop="34dp" />
+
+    <Button
+        android:id="@+id/deletefile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dataset"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="delete file" />
+</RelativeLayout>
